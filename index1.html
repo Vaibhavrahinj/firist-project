@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Simple form
+    </title>
+    <link rel="stylesheet" href="./app.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+       .parent{
+        min-height: 400px;
+        background: red;
+        height: 1px;
+       }
+       .child{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        background: yellow;
+       }
+
+       .clamp{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+       }
+       /* .clamp-to-one-line{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-word;
+       } */
+       .clamp.lines{
+        -webkit-line-clamp: 2;
+       }
+
+    </style>
+</head>
+<body class="py-4">
+    <!-- <div class="card parent">
+        <div class="child">
+            <h1>Some heading </h1>
+            <p>Lorem ipsum dolor </p>
+            <button>Click me...!</button>
+
+        </div>
+    </div> -->
+
+
+    <div class="max-w-lg mx mx-auto bg-gray-300 p-4">
+        <div class="bg-white p-4 rounded mb-4">
+            <h1 class="font-bold mb-2 text-lg">
+                A New Post
+            </h1>
+            <p class="text-sm clamp lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corru
+                pti voluptates dignissimos soluta officia distinctio vitae nulla, reprehenderit, quod mi
+                nima tempore amet, voluptate aut. Saepe, veritatis iste aut perferendis suscipit facere.
+             </p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
