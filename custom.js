@@ -10,6 +10,16 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $(".nav-toggler").each(function(_, navToggler){
+        var target=$(navToggler).data("target");
+        $(navToggler).on("click", function(){
+            $(target).animate({
+                height:"toggle",
+            })
+        })
+    })
+});
 
 // $(window).on('load',function() {
 //     $('.slider-2').flexslider();
