@@ -1,0 +1,33 @@
+	1.git checkout -b "branch name"
+		created new branch.
+
+	2.git branch 
+		*demo
+		main
+
+	3.git status
+		on branch demo
+		index.html
+
+	4.git add index.html    //add only one file
+	5.git add .             //add all file
+	
+	6.git commit -m "pass any message"
+
+	7.git push origin demo 
+
+	8.git pull/ git pull origin demo 
+		After git pull go to browser and compare and pull the request
+
+	9.git log
+		Display file date,information 
+
+	10.git checkout main 
+		go to main branch
+
+	11.git branch
+		*main   // you are in main branch
+		demo
+
+	12.git branch -d demo
+		Deleted demo branch.
